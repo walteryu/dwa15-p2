@@ -52,10 +52,6 @@
 
       <table>
         <tr>
-          <h4><?php echo 'Word Count: '.$wordInt; ?></h4>
-        </tr>
-
-        <tr>
           <td>
             <h3>
               Generated Password:

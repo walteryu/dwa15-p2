@@ -46,22 +46,27 @@
         <p><button type="submit" class="btn btn-primary">Generate Password</button>
       </form>
 
-      <h3>Results</h3>
-
       <table>
-        <?php foreach($phrases as $key => $results): ?>
-          <tr>
-            <td><?php echo 'Pass Phrase =  ' ?></td>
-            <td><?php echo $results ?></td>
-            <br>
-          </tr>
-          <tr>
-            <td><?php print_r(array_values($phrases)) ?></td>
-          </tr>
-          <tr>
-            <td><?php print_r(array_values($phrases)) ?></td>
-          </tr>
-        <?php endforeach ?>
+        <tr>
+          <h4><?php echo 'Word Count: '.$wordInt ?></h4>
+        </tr>
+
+        <tr>
+          <td>
+            <h3>
+              Generated Password:
+              <?php foreach($passphrases as $key => $results): ?>
+                <!--
+                  <tr>
+                    <td><?php echo 'Passphrase =  '.$results ?></td>
+                  </tr>
+                -->
+                <?php echo $results.' ' ?>
+              <?php endforeach ?>
+            </h3>
+          </td>
+        </tr>
+
       </table>
 
     </div> <!-- /text-center -->

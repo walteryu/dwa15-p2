@@ -21,45 +21,42 @@
   <br />
   <div class="container">
     <div class="text-left">
-      <h1>Raffle Exercise</h1>
+      <h1>XKCD Password Generator</h1>
 
       <form action='index.php' method='GET'>
-        <!-- Code Reference: https://v4-alpha.getbootstrap.com/components/forms/ -->
+        <!--
+           Code References:
+           Number Fields: http://stackoverflow.com/questions/16517718/bootstrap-number-validation
+           Form Elements: https://v4-alpha.getbootstrap.com/components/forms/
+        -->
 
-        <h3>Enter Contestant Names Below</h3>
+        <h3>Generate Password Below</h3>
 
         <div class="form-group">
-          <label for="contestant1">Name:</label>
-          <input type="text" class="form-control" id="contestant1", name='c1'>
-        </div>
-        <div class="form-group">
-          <label for="contestant2">Name:</label>
-          <input type="text" class="form-control" id="contestant2", name='c2'>
-        </div>
-        <div class="form-group">
-          <label for="contestant3">Name:</label>
-          <input type="text" class="form-control" id="contestant3", name='c3'>
-        </div>
-        <div class="form-group">
-          <label for="contestant4">Name:</label>
-          <input type="text" class="form-control" id="contestant4", name='c4'>
+          <label for="count">Number of Words:</label>
+          <input type="number" class="form-control" id="count" name='count' min='1' max='9'>
         </div>
 
-        <h3>Testing Radio Buttons Below</h3>
+        <!--
+          <h3>Additional Options</h3>
+          <p><input type='radio' name='boolean' value='yes'>Yes</input>
+          <p><input type='radio' name='boolean' value='no'>No</input>
+        -->
 
-        <p><input type='radio' name='boolean' value='yes'>Yes</input>
-        <p><input type='radio' name='boolean' value='no'>No</input>
-
-        <p><button type="submit" class="btn btn-primary">Run Raffle!</button>
+        <p><button type="submit" class="btn btn-primary">Generate Password</button>
       </form>
 
-      <h3>Raffle Results</h3>
+      <h3>Results</h3>
 
       <table>
-        <?php foreach($contestants as $name => $results) { ?>
+        <?php foreach($phrases as $key => $results) { ?>
           <tr>
-            <td><?php echo $name.' = ' ?></td>
+            <td><?php echo 'Pass Phrase =  ' ?></td>
             <td><?php echo $results ?></td>
+            <br>
+          </tr>
+          <tr>
+            <td><?php print_r(array_values($words)) ?></td>
           </tr>
         <?php } ?>
       </table>

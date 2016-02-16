@@ -23,6 +23,7 @@
     <div class="text-left">
       <h1>XKCD Password Generator</h1>
       <h3>DWA-15, Spring 2016</h3>
+      <br>
 
       <form action='index.php' method='GET'>
         <!--

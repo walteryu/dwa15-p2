@@ -32,11 +32,13 @@
           https://v4-alpha.getbootstrap.com/components/forms/
         -->
 
-        <h3>Generate Password Below</h3>
-
         <div class="form-group">
-          <label for="count">Number of Words:</label>
-          <input type="number" class="form-control" id="count" name='count' min='1' max='9'>
+          <h4>
+            <label for="count">Please Enter Number of Words:</label>
+            <input type="number" id="count" name='count' min='1' max='9'>
+          </h4>
+
+          <h4><?php echo 'Word Count: '.$wordInt; ?></h4>
         </div>
 
         <!--

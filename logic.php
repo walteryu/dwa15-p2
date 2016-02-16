@@ -53,17 +53,10 @@
     'triacetyloleandomycin'
   );
 
-  /*
-    Code References:
-    PHP array_rand: https://secure.php.net/manual/en/function.array-rand.php
-  */
-
-  $phrases = [];
-
-  echo '<pre>';
-  echo 'Form Field Input'.'<br>';
-  var_dump($_GET);
-  echo '</pre>';
+  # echo '<pre>';
+  # echo 'Form Field Input:'.'<br>';
+  # var_dump($_GET);
+  # echo '</pre>';
 
   foreach($_GET as $wordCount):
 

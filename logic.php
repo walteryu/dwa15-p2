@@ -53,30 +53,17 @@
     'triacetyloleandomycin'
   );
 
-  # foreach($_GET as $inputName => $contestantsName):
-  #   if($contestantsName != '') {
-  #     $coin = rand(0,1);
-  #     if($coin == 0 ) {
-  #       $results =  'loser';
-  #     }
-  #     else {
-  #       $results = 'winner';
-  #     }
-  #   }
-  #   else {
-  #     $contestants[$contestantsName] = 'No Name Entered';
-  #   }
-  #   $contestants[$contestantsName] = $results;
-  # endforeach;
-
-  # Remember server-side validation!
-
   /*
     Code References:
     PHP array_rand: https://secure.php.net/manual/en/function.array-rand.php
-   */
+  */
 
   $phrases = [];
+
+  echo '<pre>';
+  echo 'Form Field Input'.'<br>';
+  var_dump($_GET);
+  echo '</pre>';
 
   foreach($_GET as $wordCount):
 

@@ -49,16 +49,19 @@
       <h3>Results</h3>
 
       <table>
-        <?php foreach($phrases as $key => $results) { ?>
+        <?php foreach($phrases as $key => $results): ?>
           <tr>
             <td><?php echo 'Pass Phrase =  ' ?></td>
             <td><?php echo $results ?></td>
             <br>
           </tr>
           <tr>
-            <td><?php print_r(array_values($words)) ?></td>
+            <td><?php print_r(array_values($phrases)) ?></td>
           </tr>
-        <?php } ?>
+          <tr>
+            <td><?php print_r(array_values($phrases)) ?></td>
+          </tr>
+        <?php endforeach ?>
       </table>
 
     </div> <!-- /text-center -->

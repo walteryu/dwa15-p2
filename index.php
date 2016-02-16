@@ -25,9 +25,9 @@
 
       <form action='index.php' method='GET'>
         <!--
-           Code References:
-           Number Fields: http://stackoverflow.com/questions/16517718/bootstrap-number-validation
-           Form Elements: https://v4-alpha.getbootstrap.com/components/forms/
+          Form Element Reference:
+          http://stackoverflow.com/questions/16517718/bootstrap-number-validation
+          https://v4-alpha.getbootstrap.com/components/forms/
         -->
 
         <h3>Generate Password Below</h3>

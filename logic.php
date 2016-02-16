@@ -1,11 +1,5 @@
 <?php
 
-  echo '<pre>';
-  echo 'Form Field Input';
-  echo '<br>';
-  var_dump($_GET);
-  echo '</pre>';
-
   $words = array(
     'brisant',
     'classification',

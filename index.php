@@ -49,7 +49,7 @@
 
       <table>
         <tr>
-          <h4><?php echo 'Word Count: '.$wordInt ?></h4>
+          <h4><?php echo 'Word Count: '.$wordInt; ?></h4>
         </tr>
 
         <tr>

@@ -58,6 +58,10 @@
   # var_dump($_GET);
   # echo '</pre>';
 
+  # Set initial values for word count/passphrases.
+  $wordInt = 0;
+  $passphrases = ['Please Enter Number of Words'];
+
   foreach($_GET as $wordCount):
 
     $wordInt = intval($wordCount);

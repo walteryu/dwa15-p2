@@ -1,14 +1,15 @@
 <!--
-  Filename: raffle.php
+  Filename: index.php
   Created By: Walter Yu
-  Description: DWA-15 Lecture 3 - Raffle Exercise
+  Course: HES, DWA-15, Spring 2016
+  Description: P2 - XKCD Password Generator
 -->
 
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Raffle Exercise</title>
+  <title>XKCD Password Generator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">

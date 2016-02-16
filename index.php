@@ -1,7 +1,7 @@
 <!--
   Filename: index.php
   Created By: Walter Yu
-  Course: HES, DWA-15, Spring 2016
+  Course: HES DWA-15, Spring 2016
   Description: P2 - XKCD Password Generator
 -->
 

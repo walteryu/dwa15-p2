@@ -72,28 +72,15 @@
     if(
       ($wordInt >= 1 ) && ($wordInt <= 9)
     ) {
-      $shuffled_array = array(shuffle($words));
-      $phrases = array_slice($shuffled_array, 0, $wordInt);
+      shuffle($words);
+      var_dump($words);
 
-      /*
-        $phrases = array_rand($words, $wordInt);
-        echo 'Entire Phrases Array Contents: ';
-        echo var_dump($phrases).'<br>';
-        echo 'First Member of Phrases Array: ';
-        echo var_dump($phrases[0]).'<br>';
-        echo 'Entire Words Array Contents: ';
-        echo var_dump($words).'<br>';
-        echo 'First Member of Words Array: ';
-        echo $words[0].'<br>';
-      */
+      foreach($words as $key => $results):
+        echo $results.'<br>';
+      endforeach;
     }
     else {
-      # $phrases[$wordInt] = 'Please Enter Valid Number!';
-      echo 'Error: Please Enter Valid Number!'.'<br>';
-      echo 'Convert String Input: ';
-      echo $wordInt.'<br>';
-      echo 'Verify Integer Class: ';
-      echo var_dump($wordInt);
+      echo 'Error: Please Enter Valid Number!';
     }
     # $phrases[$wordInt] = $results;
   endforeach;

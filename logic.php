@@ -65,16 +65,18 @@
     if(
       ($wordInt >= 1 ) && ($wordInt <= 9)
     ) {
-      shuffle($words);
-      var_dump($words);
 
-      foreach($words as $key => $results):
-        echo $results.'<br>';
-      endforeach;
+      # Shuffle words, then slice array:
+      # http://www.w3schools.com/php/func_array_shuffle.asp
+      # http://www.w3schools.com/php/func_array_slice.asp
+
+      shuffle($words);
+      # var_dump($words);
+      $passphrases = array_slice($words, 0, $wordInt);
     }
     else {
       echo 'Error: Please Enter Valid Number!';
     }
-    # $phrases[$wordInt] = $results;
+
   endforeach;
 ?>

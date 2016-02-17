@@ -53,7 +53,6 @@
       # http://www.w3schools.com/php/func_array_slice.asp
 
       shuffle($words);
-      # var_dump($words);
       $passphrases = array_slice($words, 0, $wordInt);
     }
     else {

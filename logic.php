@@ -28,9 +28,21 @@
   $wordInt = 0;
   $passphrases = ['Please Enter Number of Words'];
 
-  foreach($_GET as $wordCount):
+  foreach($_GET as $userInput):
 
-    $wordInt = intval($wordCount);
+    # Conditional statement for parsing html input:
+    # http://stackoverflow.com/questions/20481578/php-check-input-type-for-validation
+
+    switch($userInput['type']) {
+    case "text": 
+      echo "<input type = 'text' name = '" . $userInput['name'] . "'>";
+      break;
+    case "number":
+      echo "<input type = 'number' name = '" . $userInput['name'] . "'>";
+      break;
+    }
+
+    $wordInt = intval($userInput);
 
     if(
       ($wordInt >= 1 ) && ($wordInt <= 9)

@@ -34,11 +34,22 @@
 
         <div class="form-group">
           <h4>
-            <label for="count">Please Enter Number of Words:</label>
+            <label for="count">Please Enter Number of Words (Between 1-9):</label>
             <input type="number" id="count" name='count' min='1' max='9'>
           </h4>
 
-          <h4><?php echo 'Word Count: '.$wordInt; ?></h4>
+          <h4><?php echo 'Last Word Count: '.$wordInt; ?></h4>
+        </div>
+
+        <div class="form-group">
+          <h4>
+            <label for="count">Add a Number?</label>
+            <input type="checkbox" id="numbers" name="numbers" value="add_number"> Yes</input>
+          </h4>
+          <h4>
+            <label for="count">Add a Character?</label>
+            <input type="checkbox" id="characters" name="characters" value="add_char"> Yes</input>
+          </h4>
         </div>
 
         <!--

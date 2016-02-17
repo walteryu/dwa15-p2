@@ -29,35 +29,44 @@
   $passphrases = ['Please Enter Number of Words'];
 
   foreach($_GET as $userInput):
+    if ($userInput == "add_number") {
 
-    # Conditional statement for parsing html input:
-    # http://stackoverflow.com/questions/20481578/php-check-input-type-for-validation
+      # Add number to last member of using array_pop/array_push:
+      # https://secure.php.net/manual/en/function.array-pop.php
+      # https://secure.php.net/manual/en/function.array-push.php
 
-    switch($userInput['type']) {
-    case "text": 
-      echo "<input type = 'text' name = '" . $userInput['name'] . "'>";
-      break;
-    case "number":
-      echo "<input type = 'number' name = '" . $userInput['name'] . "'>";
-      break;
+      $last_phrase = array_pop($passphrases);
+      $new_phrase = $last_phrase.$random;
+      array_push($passphrases, $new_phrase);
     }
+    elseif ($userInput == "add_char") {
+      $last_phrase = array_pop($passphrases);
+      shuffle($characters);
 
-    $wordInt = intval($userInput);
+      # Select first element of chars array.
+      $select_char = current($characters);
 
-    if(
-      ($wordInt >= 1 ) && ($wordInt <= 9)
-    ) {
-
-      # Shuffle words, then slice array:
-      # http://www.w3schools.com/php/func_array_shuffle.asp
-      # http://www.w3schools.com/php/func_array_slice.asp
-
-      shuffle($words);
-      $passphrases = array_slice($words, 0, $wordInt);
+      $new_phrase = $last_phrase.$select_char;
+      array_push($passphrases, $new_phrase);
     }
     else {
-      echo 'Error: Please Enter Valid Number!';
-    }
+      $wordInt = intval($userInput);
 
+      if(
+        ($wordInt >= 1 ) && ($wordInt <= 9)
+      ) {
+
+        # Shuffle words, then slice array:
+        # http://www.w3schools.com/php/func_array_shuffle.asp
+        # http://www.w3schools.com/php/func_array_slice.asp
+
+        shuffle($words);
+        $passphrases = array_slice($words, 0, $wordInt);
+      }
+      else {
+        # Catch string to int conversion error.
+        echo 'Please Enter Valid Number!';
+      }
+    }
   endforeach;
 ?>

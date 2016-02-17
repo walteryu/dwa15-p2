@@ -59,14 +59,10 @@
             <h3>
               Generated Password:
               <?php foreach($passphrases as $key => $results): ?>
-                <!--
-                  <tr>
-                    <td><?php echo 'Passphrase =  '.$results ?></td>
-                  </tr>
-                -->
                 <?php echo $results.' ' ?>
               <?php endforeach ?>
             </h3>
+            <h4><?php echo 'Last Word Count: '.$wordInt; ?></h4>
           </td>
         </tr>
 

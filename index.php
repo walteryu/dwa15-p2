@@ -31,17 +31,17 @@
                 <?php echo '(Last Word Count: '.$wordInt.'):'; ?>
               </h5>
             -->
-            <h3>
+            <h4>
               <?php foreach($passphrases as $key => $results): ?>
                 <?php echo $results.' ' ?>
               <?php endforeach ?>
-            </h3>
+            </h4>
           </td>
         </tr>
       </table>
-      </br>
+      <p>
 
-      <form action='index.php' method='GET'>
+      <form action='index.php' method='POST'>
         <!--
           Form element references listed below, in addition to video lectures.
           http://stackoverflow.com/questions/16517718/bootstrap-number-validation

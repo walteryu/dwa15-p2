@@ -20,7 +20,7 @@ Finally, array operations are used to append the number/characters to the last w
 ## Demo
 YouTube video is submitting using personal project account (StormSavvy), which contains my other coding demos:
 
-[Demo on YouTube](https://youtu.be/Clgxj92zntk)
+[Demo on YouTube](https://youtu.be/PL9idWLV7H4)
 
 ## Details for Teaching Team
 

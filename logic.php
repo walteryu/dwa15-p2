@@ -69,8 +69,8 @@
         $passphrases = array_slice($words, 0, $wordInt);
       }
       else {
-        # Catch string to int conversion error.
-        echo 'Please Enter Valid Number!';
+        # Sends flash message if input is not numbers between 1 and 9.
+        echo '<div class="alert alert-danger">'.'Please Enter Valid Number!'.'</div>';
       }
     }
   endforeach;

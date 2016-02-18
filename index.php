@@ -65,7 +65,6 @@
             <label for="options">Shuffle Passphrases Again After Selection?</label>
             <input type="checkbox" id="shuffle" name="shuffle" value="shuffle_words"> Yes</input>
           </p>
-
           <p>
             <button type="submit" class="btn btn-primary">Generate Password</button>
           </p>
@@ -80,6 +79,5 @@
 
     </div> <!-- /text-center -->
   </div> <!-- /container -->
-  <br />
 </body>
 </html>

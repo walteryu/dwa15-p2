@@ -21,22 +21,22 @@
   <div class="container">
     <div class="text-center">
       <h3>XKCD Password Generator</h3>
-      <h4>DWA-15, Spring 2016</h4>
+      <h5>DWA-15, Spring 2016</h5>
 
-      <br>
       <table class="center-table">
         <tr>
           <td>
-            <h5>
-              Generated Password
-              <?php echo '(Last Word Count: '.$wordInt.'):'; ?>
-            </h5>
-            <h4>
-              <p></p>
+            <!-- Outputs last word count used to generate password.
+              <h5>
+                Generated Password
+                <?php echo '(Last Word Count: '.$wordInt.'):'; ?>
+              </h5>
+            -->
+            <h3>
               <?php foreach($passphrases as $key => $results): ?>
                 <?php echo $results.' ' ?>
               <?php endforeach ?>
-            </h4>
+            </h3>
           </td>
         </tr>
       </table>

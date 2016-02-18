@@ -46,8 +46,12 @@
       # Select first element of chars array.
       $select_char = current($characters);
 
+      # Insert back element after modification.
       $new_phrase = $last_phrase.$select_char;
       array_push($passphrases, $new_phrase);
+    }
+    elseif ($userInput == "shuffle_words") {
+      shuffle($passphrases);
     }
     else {
       $wordInt = intval($userInput);

@@ -73,10 +73,10 @@
         </div>
       </form>
 
-      <!-- Link and image used from P2 Example: http://p2.dwa15.com/ -->
       <p>
+        <!-- Link and image used from P2 Example: http://p2.dwa15.com/ -->
         <a href='http://xkcd.com/936/'>XKCD Comic - Password Strength</a><br>
-        <img src='images/password_strength.png'>
+        <img src='images/password_strength.png' width="370" height="300">
       </p>
 
     </div> <!-- /text-center -->

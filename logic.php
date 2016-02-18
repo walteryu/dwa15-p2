@@ -19,16 +19,17 @@
     '=','[',']','{','}','|','\\',':',';','\'','<',',','>','.'
   );
 
+  # var_dump used for debugging purposes.
   # echo '<pre>';
   # echo 'Form Field Input:'.'<br>';
-  # var_dump($_GET);
+  # var_dump($_POST);
   # echo '</pre>';
 
   # Set initial values for word count/passphrases.
   $wordInt = 0;
   $passphrases = ['Please Enter Number of Words'];
 
-  foreach($_GET as $userInput):
+  foreach($_POST as $userInput):
     if ($userInput == "add_number") {
 
       # Add number to last member of using array_pop/array_push:

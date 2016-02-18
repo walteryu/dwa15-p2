@@ -18,55 +18,66 @@
 </head>
 
 <body>
-  <br />
   <div class="container">
-    <div class="text-left">
-      <h1>XKCD Password Generator</h1>
-      <h3>DWA-15, Spring 2016</h3>
+    <div class="text-center">
+      <h3>XKCD Password Generator</h3>
+      <h4>DWA-15, Spring 2016</h4>
+
       <br>
+      <table class="center-table">
+        <tr>
+          <td>
+            <h5>
+              Generated Password
+              <?php echo '(Last Word Count: '.$wordInt.'):'; ?>
+            </h5>
+            <h4>
+              <p></p>
+              <?php foreach($passphrases as $key => $results): ?>
+                <?php echo $results.' ' ?>
+              <?php endforeach ?>
+            </h4>
+          </td>
+        </tr>
+      </table>
+      </br>
 
       <form action='index.php' method='GET'>
         <!--
-          Form Element Reference:
+          Form element references listed below, in addition to video lectures.
           http://stackoverflow.com/questions/16517718/bootstrap-number-validation
           https://v4-alpha.getbootstrap.com/components/forms/
         -->
 
         <div class="form-group">
-          <h4>
+          <p>
             <label for="count">Please Enter Number of Words (Between 1-9):</label>
-            <input type="number" id="count" name="count" min="1" max="9">
-          </h4>
-        </div>
-
-        <div class="form-group">
-          <h4>
-            <label for="count">Add a Number to Last Passphrase?</label>
+            <input type="number" id="count" name="count" min="1" max="9"></input>
+          </p>
+          <p>
+            <label for="options">Add a Number to Last Passphrase?</label>
             <input type="checkbox" id="numbers" name="numbers" value="add_number"> Yes</input>
-          </h4>
-          <h4>
-            <label for="count">Add a Character to Last Passphrase?</label>
+          </p>
+          <p>
+            <label for="options">Add a Character to Last Passphrase?</label>
             <input type="checkbox" id="characters" name="characters" value="add_char"> Yes</input>
-          </h4>
-        </div>
+          </p>
+          <p>
+            <label for="options">Shuffle Passphrases Again After Selection?</label>
+            <input type="checkbox" id="shuffle" name="shuffle" value="shuffle_words"> Yes</input>
+          </p>
 
-        <p><button type="submit" class="btn btn-primary">Generate Password</button>
+          <p>
+            <button type="submit" class="btn btn-primary">Generate Password</button>
+          </p>
+        </div>
       </form>
 
-      <table>
-        <tr>
-          <td>
-            <h3>
-              Generated Password:
-              <?php foreach($passphrases as $key => $results): ?>
-                <?php echo $results.' ' ?>
-              <?php endforeach ?>
-            </h3>
-            <h4><?php echo 'Last Word Count: '.$wordInt; ?></h4>
-          </td>
-        </tr>
-
-      </table>
+      <!-- Link and image used from P2 Example: http://p2.dwa15.com/ -->
+      <p>
+        <a href='http://xkcd.com/936/'>XKCD Comic - Password Strength</a><br>
+        <img src='images/password_strength.png'>
+      </p>
 
     </div> <!-- /text-center -->
   </div> <!-- /container -->

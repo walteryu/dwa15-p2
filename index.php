@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <!--
   Filename: index.php
   Created By: Walter Yu
@@ -5,7 +7,6 @@
   Description: P2 - XKCD Password Generator
 -->
 
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -50,20 +51,21 @@
 
         <div class="form-group">
           <p>
-            <label for="count">Please Enter Number of Words (Between 1-9):</label>
-            <input type="number" id="count" name="count" min="1" max="9"></input>
+            <label for="count">Number of Words? </label>
+            <input type="number" id="count" name="count" min="1" max="9">
+            <label for="count"> (Between 1-9)</label>
           </p>
           <p>
-            <label for="options">Add a Number to Last Passphrase?</label>
-            <input type="checkbox" id="numbers" name="numbers" value="add_number"> Yes</input>
+            <input type="checkbox" id="numbers" name="numbers" value="add_number">
+            <label for="numbers">Add a Number to Last Passphrase?</label>
           </p>
           <p>
-            <label for="options">Add a Character to Last Passphrase?</label>
-            <input type="checkbox" id="characters" name="characters" value="add_char"> Yes</input>
+            <input type="checkbox" id="characters" name="characters" value="add_char">
+            <label for="characters">Add a Character to Last Passphrase?</label>
           </p>
           <p>
-            <label for="options">Shuffle Passphrases Again After Selection?</label>
-            <input type="checkbox" id="shuffle" name="shuffle" value="shuffle_words"> Yes</input>
+            <input type="checkbox" id="shuffle" name="shuffle" value="shuffle_words">
+            <label for="shuffle">Shuffle Passphrases Again After Selection?</label>
           </p>
           <p>
             <button type="submit" class="btn btn-primary">Generate Password</button>
@@ -74,7 +76,7 @@
       <p>
         <!-- Link and image used from P2 Example: http://p2.dwa15.com/ -->
         <a href='http://xkcd.com/936/'>XKCD Comic - Password Strength</a><br>
-        <img src='images/password_strength.png' width="370" height="300">
+        <img src='images/password_strength.png' width="370" height="300" alt="XKCD Comic - Password Strength">
       </p>
 
     </div> <!-- /text-center -->

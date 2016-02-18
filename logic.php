@@ -1,18 +1,15 @@
 <?php
+  /*
+    Filename: logic.php
+    Created By: Walter Yu
+    Course: HES DWA-15, Spring 2016
+    Description: P2 - XKCD Password Generator
+  */
 
-  # Declare random words, numbers and characters below.
-  $words = array(
-    'brisant', 'classification', 'finite', 'nyx', 'lucian',
-    'heraklion', 'repaste', 'liaopeh', 'sandpapery', 'unhypnotisable',
-    'owens', 'downrightness', 'zoometry', 'undertenancy', 'uredia',
-    'headboard', 'sleepcoat', 'perquisite', 'depolymerized', 'unsharpened',
-    'outrating', 'unelective', 'mashona', 'dentition', 'judgeable',
-    'subscriber', 'drivingly', 'anagrammatizing', 'fluorspar', 'impetuosity',
-    'federation', 'extraphysical', 'barrault', 'unintuitive', 'unjamming',
-    'serge', 'quoits', 'eager', 'ytterbite', 'congregation',
-    'dilaudid', 'interfoliar', 'falser', 'eugenol', 'klabund',
-    'enumerative', 'reval', 'superserviceably', 'unromanticised', 'triacetyloleandomycin'
-  );
+  # Declare random words from wordlist.php file.
+  require 'wordlist.php';
+
+  # Declare random numbers and characters below.
   $random = rand(0,9);
   $characters = array(
     '~','`','!','@','#','$','%','^','&','*','(',')','_','-','+',
